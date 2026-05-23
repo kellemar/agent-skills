@@ -4,6 +4,8 @@ A Claude/Codex agent skill that simulates an end-to-end API or business flow fro
 
 Use it when you want to reason through a flow safely instead of "just running it and seeing what happens."
 
+This best works if you have your existing repos in the same folder, eg; all you frontend and backend repos are in the same folder.
+
 ## When to use
 
 - You have (or can construct) a representative payload and want to know what would happen if you sent it.
@@ -89,7 +91,7 @@ The agent will pick up the skill from `SKILL.md` and invoke it automatically whe
 
 ## Example trigger phrases
 
-- "Walk this payload through the create-membership flow and tell me if it'll succeed."
-- "If I rerun this `POST /v1/orders` with the same body, what changes?"
+- "Walk this payload through the create-membership flow from my react-frontend repo at 1.2.3 branch to my API service, nodejs-backend at 2.0 branch and tell me if it'll succeed. Come up with other edge cases that might fail too."
+- "If I rerun this `POST /v1/orders` with the same body in the python-backend repo, what changes?"
 - "Trace what happens between `service-a@main` and `service-b@release-2025-05` for this payload."
 - "Is there partial-success risk if step 3 fails here?"
